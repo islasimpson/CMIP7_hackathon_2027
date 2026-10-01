@@ -4,6 +4,5 @@ _site/
 vendor/
 .bundle/
 Gemfile.lock
-# Private notes (contain the unpublished application form link)
 information.txt
 *.swp

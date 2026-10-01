@@ -4,9 +4,12 @@
   <meta charset="utf-8">
   <title>CLIVAR CMIP7 Hackathon has moved</title>
   <meta name="robots" content="noindex">
-  <link rel="canonical" href="https://ncar.github.io/CMIP7_hackathon_2027/">
   <meta http-equiv="refresh" content="0; url=https://ncar.github.io/CMIP7_hackathon_2027/">
-  <script>location.replace("https://ncar.github.io/CMIP7_hackathon_2027/" + location.hash);</script>
+  <script>
+    // Send old deep links (e.g. /CMIP7_hackathon_2027_TEMPORARY/logos/x.png) to the same path on the new site.
+    var rest = location.pathname.replace(/^\/CMIP7_hackathon_2027_TEMPORARY\/?/, "");
+    location.replace("https://ncar.github.io/CMIP7_hackathon_2027/" + rest + location.search + location.hash);
+  </script>
 </head>
 <body>
   <p>The CLIVAR CMIP7 Hackathon website has moved to
